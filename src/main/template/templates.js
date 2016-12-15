@@ -297,7 +297,7 @@ templates['operation'] = template({"1":function(container,depth0,helpers,partial
 },"19":function(container,depth0,helpers,partials,data) {
     return "";
 },"21":function(container,depth0,helpers,partials,data) {
-    return "          <div class='sandbox_header'>\n            <input class='submit' type='submit' value='Try it out!' data-sw-translate/>\n            <a href='#' class='response_hider' style='display:none' data-sw-translate>Hide Response</a>\n            <span class='response_throbber' style='display:none'></span>\n          </div>\n";
+    return "          <div class='sandbox_header'>\n            <input class='submit' type='submit' value='Generate curl!' data-sw-translate/>\n            <a href='#' class='response_hider' style='display:none' data-sw-translate>Hide curl</a>\n            <span class='response_throbber' style='display:none'></span>\n          </div>\n";
 },"23":function(container,depth0,helpers,partials,data) {
     return "          <h4 data-sw-translate>Request Headers</h4>\n          <div class='block request_headers'></div>\n";
 },"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
@@ -346,7 +346,7 @@ templates['operation'] = template({"1":function(container,depth0,helpers,partial
     + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.isReadOnly : depth0),{"name":"if","hash":{},"fn":container.program(19, data, 0),"inverse":container.program(21, data, 0),"data":data})) != null ? stack1 : "")
     + "        </form>\n        <div class='response' style='display:none'>\n          <h4 class='curl'>Curl</h4>\n          <div class='block curl'></div>\n          <h4 data-sw-translate>Request URL</h4>\n          <div class='block request_url'></div>\n"
     + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.showRequestHeaders : depth0),{"name":"if","hash":{},"fn":container.program(23, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "          <h4 data-sw-translate>Response Body</h4>\n          <div class='block response_body'></div>\n          <h4 data-sw-translate>Response Code</h4>\n          <div class='block response_code'></div>\n          <h4 data-sw-translate>Response Headers</h4>\n          <div class='block response_headers'></div>\n        </div>\n      </div>\n    </li>\n  </ul>\n";
+    + "        </div>\n      </div>\n    </li>\n  </ul>\n";
 },"useData":true});
 templates['param'] = template({"1":function(container,depth0,helpers,partials,data) {
     var stack1;
